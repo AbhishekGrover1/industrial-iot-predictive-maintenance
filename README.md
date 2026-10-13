@@ -1,4 +1,5 @@
 # Predictive Maintenance
+[***Click Here To View Live Project***](https://industrial-iot-predictive-maintenance-9z9h.onrender.com/)
 
 Fault diagnosis for industrial machines. An XGBoost classifier takes the machine type and five sensor readings and returns one of six machine states with a confidence score. FastAPI serves the model together with a small web console.
 
