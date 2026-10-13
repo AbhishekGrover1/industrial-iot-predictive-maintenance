@@ -1,0 +1,12 @@
+# The model files were serialised with xgboost 3.4.1 and scikit-learn 1.6.1; keep these pinned.
+fastapi==0.143.0
+uvicorn[standard]==0.54.0
+pydantic==2.14.0
+numpy==2.5.4
+pandas==3.0.6
+scikit-learn==1.6.1
+joblib==1.6.0
+
+# CPU-only build on Linux skips the CUDA libraries, so installs stay small and fast; macOS and Windows use the standard wheel.
+xgboost==3.4.1; sys_platform != "linux"
+xgboost-cpu==3.4.1; sys_platform == "linux"
